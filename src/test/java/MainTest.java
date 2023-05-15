@@ -1,20 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
 
-class MainTest {
-    Main main;
+import static org.testng.Assert.*;
 
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-        main = new Main();
+public class MainTest {
+
+    @Test
+    public void testGetHello() {
+        assertEquals(new Main().getHello(), "hello from Java");
     }
 
-    @org.junit.jupiter.api.Test
-    void getHello() {
-        assertEquals("hello from Java", main.getHello());
-    }
-
-    @org.junit.jupiter.api.Test
-    void getSize() {
-        assertEquals(15,main.getSize());
+    @Test
+    public void testGetSize() {
+        assertEquals(new Main().getSize(), 15);
     }
 }
