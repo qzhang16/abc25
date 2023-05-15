@@ -18,4 +18,8 @@ public class Main {
     public String getHello() {
         return "hello from Java";
     }
+
+    public int getSize() {
+        return "hello from Java".length();
+    }
 }
