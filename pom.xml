@@ -157,6 +157,7 @@
                        </execution>
                    </executions>
                </plugin>
+            <!-- https://spotbugs.readthedocs.io/en/stable/maven.html -->
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
